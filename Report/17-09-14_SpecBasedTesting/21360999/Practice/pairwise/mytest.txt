@@ -1,8 +1,0 @@
-# ------------------------------------------------------------------------
-# Create and format a volume
-# ------------------------------------------------------------------------
-
-Place:    Seoul,Gunsan,Jinju,Gangneung,Busan,Gyeongju,Sokcho,Naju 
-Package:  Elite,Fabulous,Great,Good
-Language: Korean,Chinese,English
-
