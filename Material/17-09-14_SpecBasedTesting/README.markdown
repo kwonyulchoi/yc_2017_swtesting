@@ -6,7 +6,14 @@ SW Testing 3주차 2017.09.14(목)
 ----------
 
 # 실습환경 설정
-본 디렉토리에 있는 inst.sh를 실행 시킨다. 
+
+우선 git clone으로 본 repository를 clone 한다.
+> $ git clone https://github.com/kwonyulchoi/yc_2017_swtesting.git 
+
+clone 한 디렉토리에서 Material 3주차 디렉토리로 들어간다
+> $ cd yc_2017_swtesting/Material/17-09-14_SpecBasedTesting/
+
+해당 디렉토리에 있는 inst.sh를 실행 시킨다. 
 이 스크립트를 통해 실습에 필요한 프로그램을 인스톨한다.
 
 $ ./inst.sh
