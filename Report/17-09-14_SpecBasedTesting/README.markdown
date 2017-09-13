@@ -15,23 +15,23 @@ yc_2017_swtesting/Material/17-09-14_SpecBasedTesting/Practice 디렉토리를 �
 디렉토리 yc_2017_swtesting/Material/17-09-14_SpecBasedTesting/Practice/EP_BVA/testframework/swut/swut_main.cpp 에는 테스트 스크립트가 있다.
 이 테스트 스크립트에는 EP와 BVA 테스트를 포함한다.
 swut_main.cpp에는 다음과 같은 내용이 있으며, 이 부분을 추가하여 각각 EP, BVA 기법 테스트를 완성하라.
-> TEST_F(SampleTest, EP) {
->   string expected;
->   expected ="A";
->   EXPECT_EQ(expected, GetGrade(93) );
-> 
->   expected ="B";
->   EXPECT_EQ(expected, GetGrade(82) );
-> }
-> 
-> TEST_F(SampleTest, BVA) {
->   string expected;
->   expected ="A";
->   EXPECT_EQ(expected, GetGrade(93) );
-> 
->   expected ="B";
->   EXPECT_EQ(expected, GetGrade(82) );
-> }
+> TEST_F(SampleTest, EP) {<br />
+>   string expected;<br />
+>   expected ="A";<br />
+>   EXPECT_EQ(expected, GetGrade(93) );<br />
+> <br />
+>   expected ="B";<br />
+>   EXPECT_EQ(expected, GetGrade(82) );<br />
+> }<br />
+> <br />
+> TEST_F(SampleTest, BVA) {<br />
+>   string expected;<br />
+>   expected ="A";<br />
+>   EXPECT_EQ(expected, GetGrade(93) );<br />
+> <br />
+>   expected ="B";<br />
+>   EXPECT_EQ(expected, GetGrade(82) );<br />
+> }<br />
 
 제출된 프로젝트는 빌드와 실행이 정상적으로 이루어져야 한다.
 
@@ -40,10 +40,10 @@ swut_main.cpp에는 다음과 같은 내용이 있으며, 이 부분을 추가�
 # 과제 2
 다음의 조합을 입력으로 갖는 SW가 있다. pairwise 조합을 만들고 그 결과를 pairwise_output.txt로 제출하라
 
-> Country: Europe,NorthAmerica,SouthAmerica,SouthAsia    
-> Processor : BCM,LG,QUALCOMM,NVDIA
-> GradeType:  Elite,Noble,Magnificent,Good,Fair
-> Ram : 16GB,32GB,64GB
+> Country: Europe,NorthAmerica,SouthAmerica,SouthAsia    <br />
+> Processor : BCM,LG,QUALCOMM,NVDIA<br />
+> GradeType:  Elite,Noble,Magnificent,Good,Fair<br />
+> Ram : 16GB,32GB,64GB<br />
 
 yc_2017_swtesting/Material/17-09-14_SpecBasedTesting/Practice/pairwise 디렉토리에는 mytest.txt 예제 스크립트를 활용하여 작업하라.
 
@@ -55,9 +55,9 @@ yc_2017_swtesting/Material/17-09-14_SpecBasedTesting/Practice/StateTransitionTes
 해당 파일에는 다음의 내용이 있으며, 이를 편집하여 테스트를 수행하라.
 파일 안에는 다음 내용이 있고, 해당 부분을 편집할 것.
 
-> TEST_F(FSMTest, state_transition_coverage_00) {
->   // Write Here
-> }
+> TEST_F(FSMTest, state_transition_coverage_00) {<br />
+>   // Write Here<br />
+> }<br />
 
 
 제출된 프로젝트는 빌드와 실행이 정상적으로 이루어져야 한다.
