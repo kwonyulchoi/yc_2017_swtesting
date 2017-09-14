@@ -1,0 +1,31 @@
+TD3
+
+		int binsearch(char *word, struct key tab[], int n) {
+			int cond;
+			int low, high, mid;
+
+B1:	 		low = 0;
+			high = n-1;
+B2-1(false):  		while (low <= high) {
+B2-2(true):	 		
+				mid = (low + high) / 2;
+B3-1(false):   	 		if ((cond = strcmp(word, tab[mid].word)) < 0)
+B3-2(true):	    			
+					high = mid-1;
+B4-1(false):	 		else if (cond > 0)
+B4-2(true):	      			
+					low = mid + 1;
+B5-1(false):	 		else
+B5-2(true):	      			
+					return mid;
+		  	}
+		  	return -1;
+		}
+
+
+TD4
+	
+	TC1	"a", NULL, 0 --> B1, B2-1
+	TC2	"b", "a,b,c,d,e", 1 --> B1, B2-2, B3-2
+	TC3	"d", "a,b,c,d,e", 3 --> B1, B2-2, B3-1,B4-2
+	TC4	"c", "a,b,c,d,e", 2 --> B1, B2-2,B3-1,B4-1, B5-2
