@@ -1,0 +1,5 @@
+Country:Europe,NorthAmerica,SouthAmerica,SouthAsia
+Processor:BDM,LG,QUALCOMM,NVDIA
+GradeType:Elite,Noble,Magnificent,Good,Fair
+Ram:16GB,32GB,64GB
+
