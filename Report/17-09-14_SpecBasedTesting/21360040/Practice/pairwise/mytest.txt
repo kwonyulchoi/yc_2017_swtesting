@@ -1,0 +1,7 @@
+Country: Europe, NorthAmerica, SouthAmerica, SouthAsia
+Processor : BCM, LG, QUALCOMM, NVDIA
+GradeType : Elite, Noble, Magnificent, Good, Fair
+RAM : 16GB, 32GB, 64GB
+
+
+
