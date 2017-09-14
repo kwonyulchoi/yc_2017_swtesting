@@ -1,0 +1,15 @@
+TD3
+TCOV 1-1 while(low <=high){-->Ture
+TCOV 1-2 whiel(low <=high){-->False
+TCOV 2-1 if ((cond = strcmp(word, tab[mid].word)) < 0){--Ture
+TCOV 2-2 if ((cond = strcmp(word, tab[mid].word)) < 0){--False
+TCOV 3-1 if(cond>0){--True
+TCOV 3-2 if(cond>)0{--False
+
+
+
+TD4
+TC1 "anything" , NUll, 0  -- TCOV 1-2
+TC2 "aaa", Talbe:{"aaa","bbb"} ,2 TCOV1-1, TCOV 2-1, TCOV 3-1
+TC3 "aaa", Table:{"aaa","bbb","ccc"}, 3 -- TCOV1-1 TCVO 2-1 TCOV 1-1 TCVo 2-2 TCVO 3-2
+TC4 "ccc", Table:{aaa","bbb","ccc"},3 --- TCOV1-1, TCOV 2-2 TCOV 3-1 TCOV 1-1 TCOV 2-2 TCOV3-2
