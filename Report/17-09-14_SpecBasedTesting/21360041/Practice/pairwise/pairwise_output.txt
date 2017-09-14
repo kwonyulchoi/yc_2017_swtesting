@@ -1,0 +1,45 @@
+Country	Processor	GradeType	Ram
+
+Europe	QUALCOMM	Noble	16GB
+
+SouthAmerica	LG	Elite	32GB
+
+SouthAsia	NVDIA	Noble	64GB
+
+NorthAmerica	NVDIA	Magnificent	32GB
+
+Europe	LG	Magnificent	64GB
+
+SouthAmerica	BDM	Fair	16GB
+
+SouthAmerica	BDM	Magnificent	64GB
+
+SouthAsia	LG	Fair	32GB
+
+SouthAsia	QUALCOMM	Good	16GB
+
+NorthAmerica	QUALCOMM	Fair	64GB
+
+SouthAsia	LG	Magnificent	16GB
+
+Europe	QUALCOMM	Elite	32GB
+
+Europe	NVDIA	Fair	16GB
+
+NorthAmerica	NVDIA	Elite	16GB
+
+Europe	BDM	Good	32GB
+
+SouthAmerica	QUALCOMM	Magnificent	64GB
+
+SouthAmerica	NVDIA	Good	64GB
+
+NorthAmerica	LG	Noble	32GB
+
+NorthAmerica	LG	Good	16GB
+
+NorthAmerica	BDM	Elite	64GB
+
+SouthAmerica	BDM	Noble	32GB
+
+SouthAsia	BDM	Elite	32GB
