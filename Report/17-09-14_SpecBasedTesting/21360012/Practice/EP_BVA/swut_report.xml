@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" disabled="0" errors="0" timestamp="2017-09-08T22:21:25" time="0.012" name="AllTests">
+  <testsuite name="SampleTest" tests="2" failures="2" disabled="0" errors="0" time="0.009">
+    <testcase name="EP" status="run" time="0.006" classname="SampleTest">
+      <failure message="testframework/swut/swut_main.cpp:31&#x0A;      Expected: expected&#x0A;      Which is: &quot;Wrong Input Value&quot;&#x0A;To be equal to: GetGrade(-30)&#x0A;      Which is: &quot;F&quot;" type=""><![CDATA[testframework/swut/swut_main.cpp:31
+      Expected: expected
+      Which is: "Wrong Input Value"
+To be equal to: GetGrade(-30)
+      Which is: "F"]]></failure>
+      <failure message="testframework/swut/swut_main.cpp:49&#x0A;      Expected: expected&#x0A;      Which is: &quot;Wrong Input Value&quot;&#x0A;To be equal to: GetGrade(134)&#x0A;      Which is: &quot;F&quot;" type=""><![CDATA[testframework/swut/swut_main.cpp:49
+      Expected: expected
+      Which is: "Wrong Input Value"
+To be equal to: GetGrade(134)
+      Which is: "F"]]></failure>
+    </testcase>
+    <testcase name="BVA" status="run" time="0.003" classname="SampleTest">
+      <failure message="testframework/swut/swut_main.cpp:57&#x0A;      Expected: expected&#x0A;      Which is: &quot;Wrong Input Value&quot;&#x0A;To be equal to: GetGrade(-1)&#x0A;      Which is: &quot;F&quot;" type=""><![CDATA[testframework/swut/swut_main.cpp:57
+      Expected: expected
+      Which is: "Wrong Input Value"
+To be equal to: GetGrade(-1)
+      Which is: "F"]]></failure>
+      <failure message="testframework/swut/swut_main.cpp:77&#x0A;      Expected: expected&#x0A;      Which is: &quot;Wrong Input Value&quot;&#x0A;To be equal to: GetGrade(101)&#x0A;      Which is: &quot;F&quot;" type=""><![CDATA[testframework/swut/swut_main.cpp:77
+      Expected: expected
+      Which is: "Wrong Input Value"
+To be equal to: GetGrade(101)
+      Which is: "F"]]></failure>
+      <failure message="testframework/swut/swut_main.cpp:81&#x0A;      Expected: expected&#x0A;      Which is: &quot;Wrong Input Value&quot;&#x0A;To be equal to: GetGrade(-32768)&#x0A;      Which is: &quot;F&quot;" type=""><![CDATA[testframework/swut/swut_main.cpp:81
+      Expected: expected
+      Which is: "Wrong Input Value"
+To be equal to: GetGrade(-32768)
+      Which is: "F"]]></failure>
+      <failure message="testframework/swut/swut_main.cpp:85&#x0A;      Expected: expected&#x0A;      Which is: &quot;Wrong Input Value&quot;&#x0A;To be equal to: GetGrade(-32767)&#x0A;      Which is: &quot;F&quot;" type=""><![CDATA[testframework/swut/swut_main.cpp:85
+      Expected: expected
+      Which is: "Wrong Input Value"
+To be equal to: GetGrade(-32767)
+      Which is: "F"]]></failure>
+      <failure message="testframework/swut/swut_main.cpp:89&#x0A;      Expected: expected&#x0A;      Which is: &quot;Wrong Input Value&quot;&#x0A;To be equal to: GetGrade(-32766)&#x0A;      Which is: &quot;F&quot;" type=""><![CDATA[testframework/swut/swut_main.cpp:89
+      Expected: expected
+      Which is: "Wrong Input Value"
+To be equal to: GetGrade(-32766)
+      Which is: "F"]]></failure>
+      <failure message="testframework/swut/swut_main.cpp:93&#x0A;      Expected: expected&#x0A;      Which is: &quot;Wrong Input Value&quot;&#x0A;To be equal to: GetGrade(32766)&#x0A;      Which is: &quot;F&quot;" type=""><![CDATA[testframework/swut/swut_main.cpp:93
+      Expected: expected
+      Which is: "Wrong Input Value"
+To be equal to: GetGrade(32766)
+      Which is: "F"]]></failure>
+      <failure message="testframework/swut/swut_main.cpp:97&#x0A;      Expected: expected&#x0A;      Which is: &quot;Wrong Input Value&quot;&#x0A;To be equal to: GetGrade(32767)&#x0A;      Which is: &quot;F&quot;" type=""><![CDATA[testframework/swut/swut_main.cpp:97
+      Expected: expected
+      Which is: "Wrong Input Value"
+To be equal to: GetGrade(32767)
+      Which is: "F"]]></failure>
+      <failure message="testframework/swut/swut_main.cpp:101&#x0A;      Expected: expected&#x0A;      Which is: &quot;Wrong Input Value&quot;&#x0A;To be equal to: GetGrade(32768)&#x0A;      Which is: &quot;F&quot;" type=""><![CDATA[testframework/swut/swut_main.cpp:101
+      Expected: expected
+      Which is: "Wrong Input Value"
+To be equal to: GetGrade(32768)
+      Which is: "F"]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
