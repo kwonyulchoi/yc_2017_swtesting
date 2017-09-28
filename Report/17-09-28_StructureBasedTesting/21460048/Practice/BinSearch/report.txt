@@ -1,0 +1,16 @@
+TD3
+
+TCOV 1-1 while (low <= high) --> True
+TCOV 1-2 while (low <= high) --> False
+TCOV 2-1 if ((cond = strcmp(word, tab[mid].word)) < 0) --> True
+TCOV 2-2 if ((cond = strcmp(word, tab[mid].word)) < 0) --> False
+TCOV 3-1 else if (cond > 0) --> True
+TCOV 3-2 else if (cond > 0) --> False
+
+
+TD4
+
+TC1 "blabla" , Null, 0 --> TCOV 1-2
+TC2 "aaa", Table:{"aaa","bbb"}, 2 --> TCOV 1-1, TCOV 2-2, TCOV 3-2
+TC3 "aaa", Table:{"aaa","bbb","ccc"}, 3 --> TCOV 1-1, TCOV 2-1, TCOV 1-1, TCOV 2-2, TCOV 3-2
+TC4 "ccc", Table:{"aaa","bbb","ccc"}, 3 --> TCOV 1-1, TCOV 2-2, TCOV 3-1, TCOV 1-1, TCOV 2-2, TCOV 3-2
