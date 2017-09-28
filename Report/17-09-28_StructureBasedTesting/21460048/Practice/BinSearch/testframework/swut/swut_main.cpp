@@ -14,7 +14,7 @@ class SampleTest : public testing::Test {
 // 사용
 //  struct key Table01[7] = { {"aaa"},{"bbb"},{"ccc"},{"ddd"},
 //    {"eee"},{"fff"},{"ggg"} }; // 7 items
-//  int Table01_size = 7; // 7 items
+//  int Table01_lssize = 7; // 7 items
 //  // Table중에서 "aaa" item 0번째 있기 때문에 0을 반환하는 것이 기대값
 //  EXPECT_EQ(0, binsearch("aaa",Table01,7));
 
