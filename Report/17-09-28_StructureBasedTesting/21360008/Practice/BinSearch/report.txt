@@ -20,5 +20,6 @@ TCOV 3-2  else if (cond > 0) --> False
 
 TD4
 TC1 "blabla", null, 0 --> TCOV 1-2
-TC2 "aaa", {"aaa"},{"bbb"},{"ccc"},{"ddd"},{"eee"},{"fff"},{"ggg"}, 7 --> 
-TC3 "a2b1", {"a1b1"},{"a1b2"},{"a2b1"},{"a2b2"}, 4 -->
+TC2 "aaa", {"aaa"},{"bbb"},{"ccc"},{"ddd"},{"eee"}, 5 --> TCOV1-1, TCOV2-1
+TC3 "ccc", {"aaa"},{"bbb"},{"ccc"},{"ddd"},{"eee"}, 5 --> TCOV1-1, TCOV2-2, TCOV3-2
+TC4 "ddd", {"aaa"},{"bbb"},{"ccc"},{"ddd"},{"eee"}, 5 --> TCOV1-1, TCOV2-2, TCOV3-1

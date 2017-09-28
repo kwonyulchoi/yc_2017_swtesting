@@ -23,7 +23,12 @@ TEST_F(SampleTest, StatementCovTest) {
 }
 
 TEST_F(SampleTest, BranchDesicionCovTest) {
+  struct key Table01[7] = { {"aaa"},{"bbb"},{"ccc"},{"ddd"},{"eee"} };
 
+  EXPECT_EQ(-1, binsearch("blabla",NULL,0));
+  EXPECT_EQ(0, binsearch("aaa",Table01,5));
+  EXPECT_EQ(2, binsearch("ccc",Table01,5));
+  EXPECT_EQ(3, binsearch("ddd",Table01,5));
 }
 
 int main(int argc, char *argv[])
