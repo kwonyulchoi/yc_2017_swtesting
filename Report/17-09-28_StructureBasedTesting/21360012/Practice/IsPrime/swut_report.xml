@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" disabled="0" errors="0" timestamp="2017-09-28T17:01:49" time="0" name="AllTests">
+  <testsuite name="SampleTest" tests="2" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="StatementCovTest" status="run" time="0" classname="SampleTest" />
+    <testcase name="BranchDesicionCovTest" status="run" time="0" classname="SampleTest" />
+  </testsuite>
+</testsuites>
