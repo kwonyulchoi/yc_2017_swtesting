@@ -6,15 +6,8 @@ SW Testing 4주차 2017.09.28(목)
 ----------
 
 # 실습환경 설정
-
-
 clone 한 디렉토리에서 Material 4주차 디렉토리로 들어간다
 > $ cd yc_2017_swtesting/Material/17-09-28_StructureBasedTesting/<br />
-
-해당 디렉토리에 있는 inst.sh를 실행 시킨다. 
-이 스크립트를 통해 실습에 필요한 프로그램을 인스톨한다.
-
-> $ ./inst.sh<br />
 
 # 개인 작업 환경 설정
 실습과제의 제출은 Report 디렉토리를 통해서 수행된다.
