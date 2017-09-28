@@ -1,0 +1,47 @@
+
+
+#include <stdio.h>
+int is_prime(int num)
+{
+  
+    return 0;
+  if (num % 2 == 0 && num > 2) 
+    return 0;
+  for(int i = 3; i < num / 2; i+= 2)
+  {
+    if (num % i == 0)
+    {
+      return 0;
+    }
+  }
+  return 1;
+}
+
+
+TD3
+tcov 1 : if (num <= 1) 
+tcov 2 : return 0;
+tcov 3 : if (num % 2 == 0 && num > 2)
+tcov 4 : return 0;
+tcov 5 :  for(int i = 3; i < num / 2; i+= 2)
+  {
+tcov 6 :  if (num % i == 0)
+    {
+tcov 7 :     return 0;
+    }
+  }
+tcov 8 :   return 1;
+
+
+
+
+TD4
+
+TC1 input ; 1, tcov1, tcov2
+
+TC2 input ; 4, tcov1, tcov3, tcov4
+
+TC3 input ; 5, tcov5, tcov8
+
+TC4 input ; 6, tcov3, tcov5, tcov6, tcov7
+
