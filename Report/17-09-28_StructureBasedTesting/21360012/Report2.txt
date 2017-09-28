@@ -9,8 +9,16 @@ TCOV 4-1 else --> True
 TCOV 4-2 else --> FALSE
 
 
-//struct key table[5]={{"aaa"},{"bbb"},{"ccc"},{"ddd"},{"eee"}};
-// int table_size= 5;
+struct key Table01[7] = { {"aaa"},{"bbb"},{"ccc"},{"ddd"},
+   {"eee"},{"fff"},{"ggg"} }; // 7 items
+  int Table01_size = 7; // 7 items
 TD4
-TC1 "aaa", Null, 0 --> TCOV 1-2
-TC2 
+TC1 "aaa", table01[7], 7 --> TCOV 1-2
+TC2 "bbb", table01[7], 7 --> TCOV 1-2
+TC3 "ccc", table01[7], 7 --> TCOV 1-2
+
+TC4 "ddd", table01[7], 7 --> TCOV 1-2
+TC5 "eee", table01[7], 7 --> TCOV 1-2
+TC6 "fff", table01[7], 7 --> TCOV 1-2
+TC7 "ggg", table01[7], 7 --> TCOV 1-2
+
