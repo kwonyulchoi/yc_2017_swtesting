@@ -1,0 +1,26 @@
+TD3
+TCOV1 if (num <= 1)
+TCOV2    return 0;
+TCOV3  if (num % 2 == 0 && num > 2)
+TCOC4    return 0;
+TCOV5  for(int i = 3; i < num / 2; i+= 2)
+  {
+TCOV6    if (num % i == 0)
+    {
+TCOV7      return 0;
+    }
+  }
+TCOV8  return 1;
+
+TC1. INPUT:1 tcov1,tcov2
+TC2. INPUT:4 tcov1, tcov3 tcov4
+TC3. INPUT:5 tcov1, tcov3 tcov8
+TC4. INPUT:11 tocv1, tcov3 tcov5 tcov6 tcov8
+TC5. INPUT:15 tocv1, tocv3 tocv5 tocv6 tocv7
+
+TD4
+TC1 1 0
+TC2 4 0
+TC3 5 1
+TC4 11 1
+TC5 15 0

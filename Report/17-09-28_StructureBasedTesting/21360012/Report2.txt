@@ -1,0 +1,16 @@
+TD3 
+TCOV 1-1 while(lov <= high) { --> True
+TCOV 1-2 while(lov <= high) { --> False
+TCOV 2-1 if((cond=strcmp(word,tab[mid].word))<0) -->True
+TCOV 2-2 if((cond==strcmp(word,tab[mid].word))<0) --> False
+TCOV 3-1 else if(cond>0) True
+TCOV 3-2 else if(cond>0) False
+TCOV 4-1 else --> True
+TCOV 4-2 else --> FALSE
+
+
+//struct key table[5]={{"aaa"},{"bbb"},{"ccc"},{"ddd"},{"eee"}};
+// int table_size= 5;
+TD4
+TC1 "aaa", Null, 0 --> TCOV 1-2
+TC2 
