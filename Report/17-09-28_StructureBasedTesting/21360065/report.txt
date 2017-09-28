@@ -1,0 +1,40 @@
+TD3
+tcov 1 if (num <= 1) 
+tcov 2    return 0;
+tcov 3  if (num % 2 == 0 && num > 2) 
+tcov 4    return 0;
+tcov 5  for(int i = 3; i < num / 2; i+= 2)
+  { 
+tcov 6   if (num % i == 0)
+    {
+tcov 7      return 0;
+    }
+  }
+tcov 8  return 1;
+
+
+TD4
+
+TC1 input ; 1 tcov1 tco2
+TC2 input ; 4 tcov1, tcov3, tcov4
+TC3 input ; 5 tcov1, tcov3, tcov5, tcov6, tcov7
+TC4 input ; 2 tcov1, tcov3, tcov8
+
+
+/////
+
+TD3
+tcov1-1  while (low <= high) {==>>true
+tcov1-2 while (low <= high) {==>>false  return -1;
+tcov2-1  if ((cond = strcmp(word, tab[mid].word)) < 0)->true
+tcov2-2    if ((cond = strcmp(word, tab[mid].word)) < 0)->false
+tcov3-1  else if (cond > 0)=>true
+tcov3-2  else if (cond > 0)=>false else if (cond>0) true
+tcov3-3  else if (cond > 0)=>true else return mid
+
+TD4
+TC1 "blabla",Null,0 ->tcov1-2
+TC2 "aaa",Table01,0 ->tcov1-1, 2-1, 
+TC3 'eee",Table01,5 ->tcov1-1, 2-2, 3-1
+TC4 "fff",Table01,6 ->tcov1-1, 2-2, 3-2
+TC5 "xxx",Table01,7 ->tcov1-1, 2-2, 3-3
