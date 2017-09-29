@@ -19,12 +19,7 @@ class SampleTest : public testing::Test {
 //  EXPECT_EQ(0, binsearch("aaa",Table01,7));
 
 TEST_F(SampleTest, StatementCovTest) {
-  struct key Table01[7] = { {"aaa"},{"bbb"},{"ccc"},{"ddd"},{"eee"},{"fff"},{"ggg"} };
-  int Table01_size = 7;
-
-  EXPECT_EQ(0, binsearch("aaa",Table01,7));
-  EXPECT_EQ(-1, binsearch("abc",Table01,7));
-
+  
 }
 
 TEST_F(SampleTest, BranchDesicionCovTest) {
@@ -32,7 +27,7 @@ TEST_F(SampleTest, BranchDesicionCovTest) {
   int Table01_size = 3;
 
   EXPECT_EQ(0, binsearch("aaa",Table01,3));
-  EXPECT_EQ(-1, binsearch("aaa",NULL,3));
+  EXPECT_EQ(-1, binsearch("aaa",NULL,0));
   EXPECT_EQ(1, binsearch("bbb",Table01,3));
   EXPECT_EQ(2, binsearch("ccc",Table01,3));
 
