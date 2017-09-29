@@ -20,6 +20,16 @@ TEST_F(SampleTest, StatementCovTest) {
 }
 
 TEST_F(SampleTest, BranchDesicionCovTest) {
+
+//TEST CASE 작성
+
+	EXPECT_EQ(0, is_prime(1));	
+	EXPECT_EQ(0, is_prime(4));
+	EXPECT_EQ(1, is_prime(5));	
+	EXPECT_EQ(0, is_prime(6));
+
+
+
 }
 
 
