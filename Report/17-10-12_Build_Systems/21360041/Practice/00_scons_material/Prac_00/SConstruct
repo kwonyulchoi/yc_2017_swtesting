@@ -6,4 +6,4 @@
 #Program('new_hello','hello.o')
 
 # Scence 3
-#Program('new_hello','hello.c')
+Program('new_hello','hello.c')
