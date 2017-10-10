@@ -1,0 +1,8 @@
+# ------------------------------------------------------------------------
+# Create and format a volume
+# ------------------------------------------------------------------------
+
+Country: Europe,NorthAmerica,SouthAmerica,SouthAsia
+Processor:BCM,LG,QUALCOMM,NVIDIA
+GradeType:Elite,Noble,Magnificent,Good,Fair
+Ram:16GB,32GB,64GB

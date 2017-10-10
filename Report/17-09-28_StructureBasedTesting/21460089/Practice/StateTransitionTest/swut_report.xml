@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" disabled="0" errors="0" timestamp="2017-09-28T15:26:04" time="0.001" name="AllTests">
+  <testsuite name="FSMTest" tests="2" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="state_coverage_00" status="run" time="0" classname="FSMTest" />
+    <testcase name="state_transition_coverage_00" status="run" time="0" classname="FSMTest" />
+  </testsuite>
+</testsuites>
