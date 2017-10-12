@@ -1,0 +1,15 @@
+TD3
+TCOV 1-1 while(low <= high) { --> True
+TCOV 1-2 while(low <= high) { --> False
+TCOV 2-1 if((cond = strcmp(word, tab[mid].word)) < 0) --> True
+TCOV 2-2 if((cond = strcmp(word, tab[mid].word)) < 0) --> False
+TCOV 3-1 else if (cond > 0) --> True
+TCOV 3-2 else if (cond > 0) --> False
+
+
+TD4
+TC1 EXPECT_EQ(-1,binsearch("blabla" , Null, 0))  --> TCOV 1-2
+TC2 EXPECT_EQ(0,binsearch("aaa", Table01[5], 5)) --> TCOV 1-1, TCOV 2-1
+TC3 EXPECT_EQ(3,binsearch("ddd", Table01[5], 5)) --> TCOV 1-1, TCOV 2-2, TCOV 2-1, TCOV 3-1
+TC4 EXPECT_EQ(2,binsearch("ccc", Table01[5], 5)) --> TCOV 1-1, TCOV 2-2, TCOV 2-1, TCOV 3-1, 
+TCOV 3-2
