@@ -60,6 +60,29 @@ TEST_F(FSMTest, state_coverage_00) {
 }
 TEST_F(FSMTest, state_transition_coverage_00) {
   // Write Here
+
+  // 현재 상태 확인 --> 잠김상태
+  EXPECT_EQ(&state_locked,m_pFsm->get_CurState());
+
+  // 밀기 이벤트 발생 시키기
+  m_pFsm->trigger(EVT_PUSH,(void*)NULL); 
+  // locked 상태에서 밀기이벤트 발생 --> 그대로 locked 인지 검증
+  EXPECT_EQ(&state_locked,m_pFsm->get_CurState());
+
+  // 동전삽입 이벤트 발생 시키기
+  m_pFsm->trigger(EVT_COIN,(void*)NULL); 
+  // 현재 상태 확인 --> 풀림상태
+  EXPECT_EQ(&state_unlocked, m_pFsm->get_CurState());
+
+  // 동전삽입 이벤트 발생 시키기
+  m_pFsm->trigger(EVT_COIN,(void*)NULL);
+  // unlocked 상태에서 동전이벤트 발생 --> 그래도 unlocked 인지 검증
+  EXPECT_EQ(&state_unlocked, m_pFsm->get_CurState());
+
+  // 밀기 이벤트 발생 시키기
+  m_pFsm->trigger(EVT_PUSH,(void*)NULL); 
+  // 현재 상태 확인 --> 잠김상태
+  EXPECT_EQ(&state_locked,m_pFsm->get_CurState());
 }
 
 
