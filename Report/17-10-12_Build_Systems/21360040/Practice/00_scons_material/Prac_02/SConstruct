@@ -2,6 +2,9 @@
 #
 # write Here ##########
 
+Program('program',Glob('*.c'))
+
+
 #######################
 
 

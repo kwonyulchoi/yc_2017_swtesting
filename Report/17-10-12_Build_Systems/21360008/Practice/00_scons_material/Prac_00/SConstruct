@@ -1,5 +1,5 @@
 # Scence 1
-#Program('hello.c')
+Program('hello.c')
 
 # Scence 2
 #Object('hello.c')
