@@ -1,3 +1,3 @@
 # write Here ##########
-
+Program(['prog.c', 'file1.c', 'file2.c'])
 #######################
