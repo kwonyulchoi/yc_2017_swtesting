@@ -1,4 +1,10 @@
 # write Here ##########
 
+SharedLibrary('EPG',['EPG.c'])
+SharedLibrary('MenuUI',['MenuUI.c'])
+SharedLibrary('Tuner',['Tuner.c'])
+
+Program('tvmain',['tvmain.c'],LIBS=['EPG','Tuner','MenuUI'],LIBPATH='.')
+
 #######################
 
