@@ -42,20 +42,23 @@ TEST(Prime, test_0)
 
 TEST(Prime, test_1)
 {
-  CHECK(get_prime(primes,5) == 2);
-  CHECK(primes->size() == 2);  
+  CHECK(get_prime(primes,1) == 0);
+  CHECK(primes->size() == 0);
+	
 }
 
 TEST(Prime, test_2)
 {
-  CHECK(get_prime(primes,6) == 3);
-  CHECK(primes->size() == 3); 
+  CHECK(get_prime(primes,4) == 2);
+  CHECK(primes->size() == 2);
+
 }
 
 TEST(Prime, test_n)
 {
   CHECK(get_prime(primes,10) == 4);
-  CHECK(primes->size() == 4); 
+  CHECK(primes->size() == 4);
+
 }
 
 
