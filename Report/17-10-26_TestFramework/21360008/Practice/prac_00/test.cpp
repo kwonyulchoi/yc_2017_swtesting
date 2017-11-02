@@ -42,26 +42,23 @@ TEST(Prime, test_0)
 
 TEST(Prime, test_1)
 {
-  // 1 값에 대한 테스트
   CHECK(get_prime(primes,1) == 0);
-  // 결과값으로 받은 벡터의 사이즈는 0 이어야 한다
   CHECK(primes->size() == 0);
+	
 }
 
 TEST(Prime, test_2)
 {
-  // 2 값에 대한 테스트
-  CHECK(get_prime(primes,3) == 1);
-  // 결과값으로 받은 벡터의 사이즈는 1 이어야 한다
-  CHECK(primes->size() == 1);
+  CHECK(get_prime(primes,4) == 2);
+  CHECK(primes->size() == 2);
+
 }
 
 TEST(Prime, test_n)
 {
-  // 100 값에 대한 테스트
   CHECK(get_prime(primes,10) == 4);
-  // 결과값으로 받은 벡터의 사이즈는 4 이어야 한다
   CHECK(primes->size() == 4);
+
 }
 
 
