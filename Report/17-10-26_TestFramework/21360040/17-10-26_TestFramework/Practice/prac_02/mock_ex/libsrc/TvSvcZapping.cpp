@@ -7,18 +7,21 @@
 
 
 int TunerLock(int tsID) {
+  mock().actualCall(__FUNCTION__);	
   printf("\033[1;36m[%s][%d] :x: TunerLock [0x%x]\033[m\n"
       , __FUNCTION__, __LINE__, tsID);
   return 0;
 }
 
 int setDecoder(int OnOff) {
+  mock().actualCall(__FUNCTION__);
   printf("\033[1;36m[%s][%d] :x: decoder [%d] \033[m\n"
       , __FUNCTION__, __LINE__, OnOff);
   return 0;
 }
 
 int GetSiInfo(int svcNum) {
+  mock().actualCall(__FUNCTION__);
   printf("\033[1;36m[%s][%d] :x: GetSiInfo [0x%x]\033[m\n"
       , __FUNCTION__, __LINE__, svcNum);
 
@@ -26,6 +29,7 @@ int GetSiInfo(int svcNum) {
 }
 
 int DisplayEpgBanner(int svcNum, int tsID) {
+  mock().actualCall(__FUNCTION__);
   printf("\033[1;36m[%s][%d] :x: Display Tv EPG Info Banner \033[m\n",
       __FUNCTION__, __LINE__);
   return 0;
