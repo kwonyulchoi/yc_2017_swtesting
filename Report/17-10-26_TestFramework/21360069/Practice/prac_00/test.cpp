@@ -42,8 +42,8 @@ TEST(Prime, test_0)
 
 TEST(Prime, test_1)
 {
-  CHECK(get_prime(primes,1) == 0);
-  CHECK(primes->size() == 0);
+  CHECK(get_prime(primes,3) == 1);
+  CHECK(primes->size() == 1);
 	
 }
 
