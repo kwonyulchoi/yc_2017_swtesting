@@ -21,6 +21,22 @@ TEST_GROUP(mock_ex)
 
 TEST(mock_ex, call_verification)
 {
+	mock().expectOneCall("TunerLock");
+
+	mock().expectNCalls(2, "setDecoder");
+
+	mock().expectOneCall("GetSiInfo");
+
+	mock().expectOneCall("DisplayEpgBanner");
+
+
+	TvSvcZapping(0x43, 0x11);
+
+	//init_ac_mgr_system();
+	//deinit_ac_mgr_system();
+
+	mock().checkExpectations();
+
 }
 
 

@@ -42,16 +42,41 @@ TEST(Prime, test_0)
 
 TEST(Prime, test_1)
 {
+  // std::vector<int>* primes;
+  // primes =new std::vector<int>;
+  
+  // 1 값에 대한 테스트
+  CHECK(get_prime(primes,1) == 0);
+  // 결과값으로 받은 벡터의 사이즈는 0 이어야 한다
+  CHECK(primes->size() == 0);
+
+  // delete primes;
 }
 
 TEST(Prime, test_2)
 {
+  // std::vector<int>* primes;
+  // primes =new std::vector<int>;
+  
+  // 2 값에 대한 테스트
+  CHECK(get_prime(primes,2) == 0);
+  // 결과값으로 받은 벡터의 사이즈는 0 이어야 한다
+  CHECK(primes->size() == 0);
 
+  // delete primes;
 }
 
-TEST(Prime, test_n)
+TEST(Prime, test_9)
 {
+  // std::vector<int>* primes;
+  // primes =new std::vector<int>;
+  
+  // 10 값에 대한 테스트
+  CHECK(get_prime(primes,9) == 0);
+  // 결과값으로 받은 벡터의 사이즈는 0 이어야 한다
+  CHECK(primes->size() == 4);
 
+  // delete primes;
 }
 
 
