@@ -7,11 +7,6 @@
 
 
 int TunerLock(int tsID) {
-  
-  #ifdef MOCK_TEST
-  mock().actualCall(__FUNCTION__);
-  #endif
-  
   printf("\033[1;36m[%s][%d] :x: TunerLock [0x%x]\033[m\n"
       , __FUNCTION__, __LINE__, tsID);
   mock().actualCall(__FUNCTION__);
@@ -19,11 +14,6 @@ int TunerLock(int tsID) {
 }
 
 int setDecoder(int OnOff) {
-  
-  #ifdef MOCK_TEST
-  mock().actualCall(__FUNCTION__);	
-  #endif
-  
   printf("\033[1;36m[%s][%d] :x: decoder [%d] \033[m\n"
       , __FUNCTION__, __LINE__, OnOff);
   mock().actualCall(__FUNCTION__);
@@ -31,23 +21,14 @@ int setDecoder(int OnOff) {
 }
 
 int GetSiInfo(int svcNum) {
-  
-  #ifdef MOCK_TEST
-  mock().actualCall(__FUNCTION__);
-  #endif
-  
   printf("\033[1;36m[%s][%d] :x: GetSiInfo [0x%x]\033[m\n"
       , __FUNCTION__, __LINE__, svcNum);
   mock().actualCall(__FUNCTION__);
+
   return 0;
 }
 
 int DisplayEpgBanner(int svcNum, int tsID) {
-  
-  #ifdef MOCK_TEST
-  mock().actualCall(__FUNCTION__);
-  #endif
-  
   printf("\033[1;36m[%s][%d] :x: Display Tv EPG Info Banner \033[m\n",
       __FUNCTION__, __LINE__);
   mock().actualCall(__FUNCTION__);
