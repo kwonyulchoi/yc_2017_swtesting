@@ -23,7 +23,7 @@ string GetGrade(int Score)
     else if (Score <= 49 && Score >= 30 ) {
         grade ="D";
     }
-    else if (Score <= 29 && Score >=0 ) {
+    else if (Score <= 29 && Score >= 0   ) {
         grade ="F";
     }
 
