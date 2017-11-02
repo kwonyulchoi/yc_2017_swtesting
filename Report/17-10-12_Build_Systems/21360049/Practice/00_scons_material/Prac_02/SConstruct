@@ -1,0 +1,9 @@
+#Program(['Comm.c','prog.c','file1.c','file2.c','file3.c'])
+#
+# write Here ##########
+
+Program('program', Glob('*.c'))
+
+#######################
+
+

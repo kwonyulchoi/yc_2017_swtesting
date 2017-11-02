@@ -1,0 +1,6 @@
+# write Here ##########
+SharedLibrary('foo',['file1.c','file2.c','file3.c','Comm.c'])
+program('program',['prog.c'],LIBS=['foo'],LIBPATH='.')
+#######################
+
+

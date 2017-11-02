@@ -1,0 +1,22 @@
+TD3
+
+
+tcov1  if (num <= 1) 
+tcov2    return 0;
+tcov3   if (num % 2 == 0 && num > 2) 
+tcov4    return 0;
+tcov5  for(int i = 3; i < num / 2; i+= 2)
+  {
+tcov6    if (num % i == 0)
+    {
+tcov7      return 0;
+    
+  }
+tcov8  return 1;
+}
+
+TD4
+
+TC1 input; 1, tcov1,tcov2
+TC2 input; 4, tcov1, tcov3, tcov4
+TC3 input; 13, tcov1, tcov3, tcov5, tcov6, tcov8

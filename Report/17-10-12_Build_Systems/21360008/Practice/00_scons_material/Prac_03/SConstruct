@@ -1,0 +1,8 @@
+# write Here ##########
+
+StaticLibrary('foo',['file1.c','file2.c','file3.c','Comm.c'])
+
+Program('program',['prog.c'],LIBS=['foo'],LIBPATH='.')
+
+#######################
+

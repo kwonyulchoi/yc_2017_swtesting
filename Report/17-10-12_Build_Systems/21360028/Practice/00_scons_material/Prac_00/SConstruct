@@ -1,0 +1,9 @@
+#Scence 1
+#Program('hello.c')
+
+#Scence 2
+#Object('hello.c')
+#Program('new_hello','hello.o')
+
+# Scence 3
+Program('new_hello','hello.c')
