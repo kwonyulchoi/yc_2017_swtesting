@@ -21,10 +21,16 @@ TEST_GROUP(mock_ex)
 
 TEST(mock_ex, call_verification)
 {
+  mock().expectOneCall("TunerLock").withCallOrder(1);
+  mock().expectOneCall("setDecoder").withCallOrder(2);
+  mock().expectOneCall("setDecoder").withCallOrder(3);
+  mock().expectOneCall("GetSiInfo").withCallOrder(4);
+  mock().expectOneCall("DisplayEpgBanner").withCallOrder(5);
+
+  TvSvcZapping(0x1b3, 0x77);
+
+  mock().checkExpectations();
 }
-
-
-
 
 
 int main(int argc, char** argv)
