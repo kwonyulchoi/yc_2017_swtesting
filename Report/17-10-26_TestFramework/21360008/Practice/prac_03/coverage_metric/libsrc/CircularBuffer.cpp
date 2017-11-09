@@ -70,7 +70,7 @@ void CircularBuffer::Print()
     }
     printf(">\n");
 }
-
+/*
 #if 1 // :x: 
 struct fred_t {
 	int x;
@@ -118,5 +118,5 @@ void f3(int a)
     // if a is not 1 then p is NULL
     p->x = 0;
 }
-#endif // :x: for test
+#endif // :x: for test*/
 
